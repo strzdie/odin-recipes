@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Recipes</title>
+</head>
+<body>
+    <header>
+        <h1>Odin Recipes</h1>
+        <p>Discover delicious Filipino dishes!</p>
+    </header>
+
+    <main>
+        <h2>Filipino Recipes</h2>
+
+        <nav aria-label="Recipe navigation">
+            <ul>
+                <li><a href="./recipes/adobo.html">Chicken Adobo</a></li>
+                <li><a href="./recipes/sinigang.html">Pork Sinigang</a></li>
+                <li><a href="./recipes/tinola.html">Chicken Tinola</a></li>
+                <li><a href="./recipes/humba.html">Pork Humba</a></li>
+            </ul>
+        </nav>
+
+        <section aria-labelledby="feedback-heading">
+            <h2 id="feedback-heading">Share Your Feedback</h2>
+
+            <p>Tell us what you think about our Filipino recipes!</p>
+
+            <form action="https://formspree.io/f/mbgoknel" method="POST">
+                <p>
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </p>
+
+                <p>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <p>
+                    <label for="favorite">Favorite Filipino Dish:</label>
+                    <select id="favorite" name="favorite">
+                        <option value="adobo">Chicken Adobo</option>
+                        <option value="sinigang">Pork Sinigang</option>
+                        <option value="tinola">Chicken Tinola</option>
+                        <option value="humba">Pork Humba</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="message">Your Feedback:</label>
+                    <textarea id="message" name="message"
+                              rows="4" cols="40" required></textarea>
+                </p>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Odin Recipes - ITE 10 HTML Project</p>
+    </footer>
+</body>
+</html>
