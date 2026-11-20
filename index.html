@@ -24,7 +24,7 @@
             </ul>
         </nav>
 
-        <section aria-labelledby="feedback-heading">
+<section aria-labelledby="feedback-heading">
     <details>
         <summary id="feedback-heading">Give Feedback</summary>
 
@@ -33,43 +33,37 @@
 
         <form action="https://formspree.io/f/mbgoknel" method="POST">
 
+            <p>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </p>
+
+            <p>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="dish">Favorite Filipino Dish:</label>
+                <select id="dish" name="dish">
+                    <option value="adobo">Chicken Adobo</option>
+                    <option value="sinigang">Pork Sinigang</option>
+                    <option value="tinola">Chicken Tinola</option>
+                    <option value="humba">Pork Humba</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="message">Your Feedback:</label>
+                <textarea id="message" name="message"
+                          rows="4" cols="40" required></textarea>
+            </p>
+
+            <button type="submit">Submit Feedback</button>
+
+        </form>
     </details>
 </section>
-            <h2 id="feedback-heading">Share Your Feedback</h2>
-
-            <p>Tell us what you think about our Filipino recipes!</p>
-
-            <form action="https://formspree.io/f/mbgoknel" method="POST">
-                <p>
-                    <label for="name">Your Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </p>
-
-                <p>
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" name="email" required>
-                </p>
-
-                <p>
-                    <label for="favorite">Favorite Filipino Dish:</label>
-                    <select id="favorite" name="favorite">
-                        <option value="adobo">Chicken Adobo</option>
-                        <option value="sinigang">Pork Sinigang</option>
-                        <option value="tinola">Chicken Tinola</option>
-                        <option value="humba">Pork Humba</option>
-                    </select>
-                </p>
-
-                <p>
-                    <label for="message">Your Feedback:</label>
-                    <textarea id="message" name="message"
-                              rows="4" cols="40" required></textarea>
-                </p>
-
-                <button type="submit">Submit Feedback</button>
-            </form>
-        </section>
-    </main>
 
     <footer>
            <p>&copy; 2026 Odin Recipes | Created by Diether Pagtalunan</p>
