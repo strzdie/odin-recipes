@@ -2,7 +2,7 @@
 
 This is my first HTML project for The Odin Project. I made a simple website featuring four Filipino recipes: Chicken Adobo, Pork Sinigang, Chicken Tinola, and Pork Humba.
 
-Each recipe has a picture, ingredients, cooking steps, and a video tutorial. :P
+Each recipe has a picture, ingredients, cooking steps, and a video tutorial. :)
 
 ## What I Learned 
 
